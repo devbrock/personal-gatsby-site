@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <Link style={{ boxShadow: 'none', textDecoration: 'underline', color: 'inherit' }}
+        <Link style={{ boxShadow: 'none', textDecoration: 'underline',  color: 'inherit' }}
           to={'/blog'}>
           Back to all blogs</Link>
 

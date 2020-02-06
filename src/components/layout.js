@@ -11,6 +11,18 @@ class Layout extends React.Component {
     const blogPath = `${__PATH_PREFIX__}/blog/`
     let header
 
+
+    const navbar = (
+      <div>
+        <div style={{ marginTop: '0', fontFamily: "Montserrat", padding: '1rem 1rem', fontWeight: '500', }}>
+          <ul style={{ listStyle: 'none', display: 'flex'}}>
+            <li><Link to={`/`} style={{boxShadow: 'none', textDecoration: 'underline',  color: 'inherit'}}>Home</Link></li>
+          </ul>
+        </div>
+      </div>
+    )
+
+
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
         <h1
@@ -55,23 +67,26 @@ class Layout extends React.Component {
       )
     }
     return (
-      <Wrapper>
-        <div
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: '900px',
-            padding: '1em 1.5em',
-            minHeight: '90vh'
-          }}
-        >
-          <header>{header}</header>
-          <main style={{ fontFamily: 'Montserrat' }}>{children}</main>
-        </div>
-        <Footer>
-          © {new Date().getFullYear()} Brock Balducci
+      <>
+        <Wrapper>
+        <div> {navbar} </div>
+          <div
+            style={{
+              marginLeft: `auto`,
+              marginRight: `auto`,
+              maxWidth: '900px',
+              padding: '1em 1.5em',
+              minHeight: '90vh'
+            }}
+          >
+            <header>{header}</header>
+            <main style={{ fontFamily: 'Montserrat' }}>{children}</main>
+          </div>
+          <Footer>
+            © {new Date().getFullYear()} Brock Balducci
         </Footer>
-      </Wrapper>
+        </Wrapper>
+      </>
     )
   }
 }
