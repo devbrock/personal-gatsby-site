@@ -34,11 +34,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+              Written by <strong>{author}</strong> who lives and works in the United States building sometimes cool and useful things.
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              <a style={{ textDecoration: 'none' }} href={`https://twitter.com/${social.twitter}`}>
+                <span style={{ color: '#2f4b78', textDecoration: 'none', fontWeight: '900' }}>Follow him on Twitter</span>
               </a>
             </p>
           </Container>

@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Kyle Matthews`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Dev Brock`,
+    author: `Brock Balducci`,
+    description: `A personal website with styled components, dark mode, and Netlify CMS.`,
+    siteUrl: `https://devbrock.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `brock_balducci`,
     },
   },
   plugins: [
@@ -70,11 +70,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `DevBrock`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#2f4b78`,
         display: `minimal-ui`,
         // edit below
         icon: `content/assets/gatsby-icon.png`,

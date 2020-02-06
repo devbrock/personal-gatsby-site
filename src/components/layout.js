@@ -32,7 +32,8 @@ class Layout extends React.Component {
           </Link>
         </h1>
       )
-    } else {
+    }
+    else {
       header = (
         <h3
           style={{
@@ -46,7 +47,7 @@ class Layout extends React.Component {
               textDecoration: `none`,
               color: `inherit`,
             }}
-            to={`/blog/`}
+            to={`/`}
           >
             {title}
           </Link>
@@ -59,17 +60,16 @@ class Layout extends React.Component {
           style={{
             marginLeft: `auto`,
             marginRight: `auto`,
-            maxWidth: rhythm(24),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            maxWidth: '900px',
+            padding: '1em 1.5em',
+            minHeight: '90vh'
           }}
         >
           <header>{header}</header>
-          <main>{children}</main>
+          <main style={{ fontFamily: 'Montserrat' }}>{children}</main>
         </div>
         <Footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()} Brock Balducci
         </Footer>
       </Wrapper>
     )
