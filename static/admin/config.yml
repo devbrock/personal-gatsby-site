@@ -1,6 +1,6 @@
 backend:
    name: github
-+  repo: devbrock/personal-gatsby-site
+   repo: devbrock/personal-gatsby-site
 
 media_folder: static/assets
 public_folder: assets
