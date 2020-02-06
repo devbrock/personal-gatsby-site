@@ -83,6 +83,7 @@ const Wrapper = styled.div`
 const Footer = styled.footer`
   text-align: center;
   margin: 24px;
+  font-family: 'Montserrat'
 `
 
 export default Layout
